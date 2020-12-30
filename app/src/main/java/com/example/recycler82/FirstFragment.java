@@ -1,6 +1,7 @@
 package com.example.recycler82;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +9,9 @@ import android.view.ViewGroup;
 import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
+
+import java.util.ArrayList;
+import java.util.List;
 
 public class FirstFragment extends Fragment {
 
@@ -30,5 +34,12 @@ public class FirstFragment extends Fragment {
                         .navigate(R.id.action_FirstFragment_to_SecondFragment);
             }
         });
+        Log.d("LISTADO", wordList().toString());
+    }
+    private List<String> wordList(){
+        List<String> listado = new ArrayList<>();
+        for (int i = 0; 1 < 50; i++) {
+            listado.add("Palabra"+i);
+        }
     }
 }
