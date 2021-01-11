@@ -10,9 +10,10 @@ import androidx.fragment.app.Fragment;
 import androidx.navigation.fragment.NavHostFragment;
 
 public class SecondFragment extends Fragment {
+    private static final String ARG_PARAM1 = "param1";
 
     @Override
-    public View onCreateView(
+    public  View onCreateView(
             LayoutInflater inflater, ViewGroup container,
             Bundle savedInstanceState
     ) {
